@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculator App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--Font: Open Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <div class="calc">
+    <script src="script.js"></script>
+    <form>
+      <div id="screen-container">
+      <input type="text" id="screen"/>
+      </div>
+<!--Calculator buttons that call onclick functions defined in script.js-->
+    <div class="buttons">
+      <button type="button" onclick="reset()">AC</button>
+      <button type="button" onclick="switchCase()">+/-</button>
+      <button type="button" onclick="percent()">%</button>
+      <button type="button" onclick="square()">x²</button>
+      <button type="button" onclick="setSign('÷')">÷</button>
+      <button type="button" onclick="sqrt()">√</button>
+      <button type="button" onclick="addNum(7)">7</button>
+      <button type="button" onclick="addNum(8)">8</button>
+      <button type="button" onclick="addNum(9)">9</button>
+      <button type="button" onclick="setSign('x')">x</button>
+      <button type="button" onclick="half()">½</button>
+      <button type="button" onclick="addNum(4)">4</button>
+      <button type="button" onclick="addNum(5)">5</button>
+      <button type="button" onclick="addNum(6)">6</button>
+      <button type="button" onclick="setSign('-')">-</button>
+      <button type="button" onclick="setSign('xʸ')">xʸ</button>
+      <button type="button" onclick="addNum(1)">1</button>
+      <button type="button" onclick="addNum(2)">2</button>
+      <button type="button" onclick="addNum(3)">3</button>
+      <button type="button" onclick="setSign('+')">+</button>
+      <button type="button" onclick="addNum(3.14159265359)">π</button>
+      <button type="button" onclick="addNum(0)">0</button>
+      <button type="button" onclick="log()">log</button>
+      <button type="button" onclick="decimal()">.</button>
+      <button type="button" onclick="equalPressed()">=</button>
+    </div>
+    </form>
+   </div>
+  </body>
+</html>
